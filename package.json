@@ -1,14 +1,12 @@
 {
-  "name": "manage",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^4.1.0"
+    "start": "node server/index.js"
   }
 }
