@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Alpin" />
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Binar: Challenge 04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Example CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top wrapper">
+      <a href="index.html" class="logo"></a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a href="#ourservice-page" class="nav-link">Our Services</a>
+        </li>
+        <li class="nav-item"><a href="#whyus-page" class="nav-link">Why Us</a>
+        </li>
+        <li class="nav-item"><a href="#testimonial-page" class="nav-link">Testimonial</a>
+        </li>
+        <li class="nav-item"><a href="#faq-page" class="nav-link">FAQ</a>
+        </li>
+        <li><button class="btn-register">Register</button></li>
+      </ul>
+      <button id="sidebar-menu" class="btn-burger-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <img src="images/burger-ico.svg" alt="menu">
+      </button>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">BCR</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="flex-column">
+          <li class="nav-item"><a href="#ourservice-page" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Why Us</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Testimonial</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a>
+          </li>
+          <li><button class="btn-register">Register</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="wrapper" id="main-page">
+      <div class="container">
+        <div class="left-col">
+          <h1>Sewa & Rental Mobil Terbaik di kawasan Bekasi</h1>
+          <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        </div>
+        <div class="right-col">
+          <img src="images/img_car.png" alt="car">
+        </div>
+      </div>
+    </section>
+
+    <div class="form-container">
+      <form action="">
+        <div class="form-fields">
+          <div class="input-fields">
+            <label for="">Tipe Driver</label>
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example" required>
+              <option selected>Pilih Tipe Driver</option>
+              <option value="1">Dengan Sopir</option>
+              <option value="2">Tanpa Sopir (Lepas Kunci)</option>
+            </select>
+          </div>
+          <div class="input-fields">
+            <label for="">Tanggal</label>
+            <input type="text"
+            onfocus="(this.type='date')" onblur="(this.type='text')" name="tanggal" id="inputDate"placeholder="Pilih Tanggal" required>
+          </div>
+          <div class="input-fields">
+            <label for="">Waktu Jemput/Ambil</label>
+            <input type="text"
+            onfocus="(this.type='time')" onblur="(this.type='text')" name="waktu" id="inputTime" placeholder="Pilih Waktu" required>
+          </div>
+          <div class="input-fields">
+            <label for="">Jumlah Penumpang (optional)</label>
+            <input name="jumlah" id="inputCapacity" placeholder="Jumlah Penumpang" required><i class="fa-solid fa-user-group"></i>
+          </div>
+          <button type="submit" id="cari-mobil">Cari Mobil</button>
+        </div>
+      </form>
+    </div>
+
+    <button id="load-btn">Load</button>
+    <button id="clear-btn">Clear</button>
+    <div id="cars-container"></div>
+
+    <section class="wrapper" id="footer">
+      <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h4>
+                    <h4>binarcarrental@gmail.com</h4>
+                    <h4>081-233-334-808</h4>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#first-page">Our Services</a></li>
+                        <li><a href="#second-page">Why Us</a></li>
+                        <li><a href="#third-page">Testimonial</a></li>
+                        <li><a href="#fifth-page">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect with us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Copyright Binar 2022</h4>
+                    <div class="footer-logo"></div>
+                </div>
+            </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ba7cfbc847.js" crossorigin="anonymous"></script>
+  </body>
+</html>
