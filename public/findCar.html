@@ -66,38 +66,39 @@
     </section>
 
     <div class="form-container">
-      <form action="">
+      <div class="form">
         <div class="form-fields">
           <div class="input-fields">
             <label for="">Tipe Driver</label>
-            <select class="form-select form-select-lg" aria-label=".form-select-lg example" required>
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
               <option selected>Pilih Tipe Driver</option>
               <option value="1">Dengan Sopir</option>
               <option value="2">Tanpa Sopir (Lepas Kunci)</option>
             </select>
           </div>
           <div class="input-fields">
-            <label for="">Tanggal</label>
-            <input type="text"
-            onfocus="(this.type='date')" onblur="(this.type='text')" name="tanggal" id="inputDate"placeholder="Pilih Tanggal" required>
+            <label>Tanggal</label>
+            <input type="date" placeholder="Pilih Tanggal" id="inputDate" required>
           </div>
           <div class="input-fields">
-            <label for="">Waktu Jemput/Ambil</label>
-            <input type="text"
-            onfocus="(this.type='time')" onblur="(this.type='text')" name="waktu" id="inputTime" placeholder="Pilih Waktu" required>
+            <label>Waktu Jemput/Ambil</label>
+            <input type="time" id="inputTime" placeholder="Pilih Waktu" required>
           </div>
           <div class="input-fields">
-            <label for="">Jumlah Penumpang (optional)</label>
-            <input name="jumlah" id="inputCapacity" placeholder="Jumlah Penumpang" required><i class="fa-solid fa-user-group"></i>
+            <label>Jumlah Penumpang (optional)</label>
+            <input id="inputCapacity" placeholder="Jumlah Penumpang"><i class="fa-solid fa-user-group"></i>
           </div>
-          <button type="submit" id="cari-mobil">Cari Mobil</button>
+          <button id="searchBtn">Cari Mobil</button>
         </div>
-      </form>
+      </div>
     </div>
 
-    <button id="load-btn">Load</button>
-    <button id="clear-btn">Clear</button>
-    <div id="cars-container"></div>
+    <div class="resultCar-msg">
+      <div class="error-msg" style="display:none;" id="errorMsg"></div>
+    </div>
+    <div class = "wrapper">
+      <div id="cars-container"></div>
+    </div>
 
     <section class="wrapper" id="footer">
       <footer>

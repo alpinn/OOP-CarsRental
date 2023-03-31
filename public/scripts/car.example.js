@@ -1,4 +1,4 @@
-class Car {
+class Car{
   static list = [];
 
   static init(cars) {
@@ -41,12 +41,26 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+    <section class="wrapper">
+      <div class="rowCar">
+        <div class="columnCar">
+          <img src="${this.image}" alt="${this.manufacture}" class="car-img">
+          <div class="carDesc">
+            <p>Nama dan Tipe: ${this.model}</p>
+            <h2>Rp. ${this.rentPerDay}/day</h2>
+            <p id="carInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p><i class="fa-solid fa-user-group"></i> ${this.capacity} orang</p>
+            <p><i class="fa-solid fa-gear"></i> ${this.transmission}</p>
+            <p><i class="fa-solid fa-calendar-days"></i> Tahun ${this.year}</p>
+            <button class="pilihMobil">Pilih Mobil</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            
+
+        
     `;
   }
 }

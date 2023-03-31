@@ -251,7 +251,7 @@ section#whyus-page{
 }
 
 .card-content{
-  padding-top: 1.6em;;
+  padding-top: 1.6em;
 }
 
 .card-content h2{
@@ -492,7 +492,7 @@ section#faq-page{
 /* footer start */
 
 footer{
-  margin-top: -20em;
+  margin-top: -5em;
 }
 
 footer .container{
@@ -575,10 +575,76 @@ ul{
 }
 /* footer end */
 
+/* all styling in js files START*/
+.rowCar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: .5em 3em;
+}
+
+.columnCar{
+  flex: 1;
+  border: 2px solid rgb(138, 138, 138, 0.2);
+  border-radius: 8px;
+  margin: 2em;
+  padding: 1em;
+}
+
+.columnCar:first-child{
+  margin-left: 0;
+}
+
+.columnCar img{
+  position: relative;
+  left: 2.2%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 27em;
+  height: 16em;
+}
+
+.carDesc{
+  margin: 2em 0;
+  padding: 1em;
+}
+
+.carDesc p{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+p#carInfo{
+  padding: .5em 0;
+}
+
+.carDesc h2{
+  font-weight: 1.6rem;
+  font-weight: 700;
+}
+
+.carDesc i {
+  margin: .5em 0;
+  color: #8A8A8A;
+}
+
+button.pilihMobil{
+  position: relative;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  width: 15em;
+  height: 3em;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* all styling in js files END*/
+
 /* styling for findCar.html START*/
 .form-container{
   background: white;
-  bottom: 12em;
+  bottom: 0em;
   margin: auto;
   margin-bottom: 10em;
   position: relative;
@@ -590,25 +656,25 @@ ul{
   -moz-box-shadow: -1px 0px 5px 1px rgba(0,0,0,0.3);
 }
 
-.form-container form{
+.form-container .form{
   position: relative;
   min-height: 106px;
   align-items: center;
   display: flex;
 }
 
-.form-container form .form-fields{
+.form-container .form .form-fields{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-form .form-fields .input-fields{
+.form .form-fields .input-fields{
   display: flex;
   flex-direction: column;
 }
 
-form .form-fields .input-fields:not(:first-child){
+.form .form-fields .input-fields:not(:first-child){
   margin-left: 1.5em;
 }
 
@@ -661,7 +727,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   bottom: 33%;
 }
 
-#cari-mobil{
+button#searchBtn{
   max-width: 92px;
   min-height: 36px;
   font-size: 1.4rem;
