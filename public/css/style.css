@@ -722,6 +722,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-width: thin;
 }
 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: rgba(23, 212, 118, 0);
+  opacity: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
 .input-fields .fa-user-group{
   left: 87%;
   bottom: 33%;
